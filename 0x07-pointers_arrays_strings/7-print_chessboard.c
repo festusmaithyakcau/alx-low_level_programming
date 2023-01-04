@@ -1,4 +1,4 @@
-#include "school.h"
+#include "main.h"
 
 /**
  * print_chessboard - prints the chess board
