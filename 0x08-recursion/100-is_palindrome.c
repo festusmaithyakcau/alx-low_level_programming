@@ -6,6 +6,7 @@
  *
  * Return: length of str
 */
+
 int _strlen(char *str)
 {
 	if (!*str)
@@ -21,6 +22,7 @@ int _strlen(char *str)
  * @p: String to check
  * Return: 1 if palindrome 0 if not
 */
+
 int _palindrome(int l, int i, char *p)
 {
 	if (i > l / 2)
@@ -37,6 +39,7 @@ int _palindrome(int l, int i, char *p)
  *
  * Return: 1 if palindrome, 0 if not
 */
+
 int is_palindrome(char *s)
 {
 	int l;
