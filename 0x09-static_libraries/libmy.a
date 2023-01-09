@@ -1,5 +1,12 @@
 #ifndef MAIN_H
-#ifndef MAIN_H
+#define MAIN_H
+
+/*
+ *File : libmy.a
+ *Auth: Festus Maithya
+ *Desc: file containing the prototypes of all functions
+         included in main.h
+*/
 
 int _putchar(char c);
 int _islower(int c);
