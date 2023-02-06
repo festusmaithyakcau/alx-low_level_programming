@@ -1,31 +1,77 @@
 #include "main.h"
 
 /**
- * binary_to_uint - Converts a binary number to an unsigned int.
- * @b: A pointer to a string of 0 and 1 chars.
+ * _atoi - converts chars to integer
  *
- * Return: If b is NULL or contains chars not 0 or 1 - 0.
- * Otherwise - the converted number.
+ * @c: char to convert
+ *
+ * Return: converted integer
 */
-unsigned int binary_to_uint(const char *b);
+unsigned int _atoi(char c)
 {
-	unsigned int num = 0, mult = 1;
-	int len;
+	return ((unsigned int) c - '0');
+}
 
-	if (b == '\0')
+/**
+ * _strlen - gets the length of a string
+ *
+ * @str: string input
+ *
+ * Return: string length
+*/
+unsigned int _strlen(const char *str)
+{
+	unsigned int index = 0;
+
+	while (str[index] != '\0')
+		index++;
+	return (index);
+}
+
+/**
+ * binary_to_uint - a function that converts a binary number
+ * to an unsigned int
+ *
+ * @b: string that contains 0 and 1 characters
+ *
+ * Return: the number converted or 0
+ * if @b contains a character
+ * that is not 0 or 1 or when
+ * @b is null
+*/
+unsigned int binary_to_uint(const char *b)
+{
+	int index;
+	unsigned int result = 0, base2 = 1,  num = 0;
+
+	/*if b is NULL return 0*/
+	if (b == NULL)
 		return (0);
 
-	for (len = 0; b[len];)
-		len++;
+#ifdef DEBUG /*print debug statement*/
+	printf("String is %s, and length is %u.\n", b, _strlen(b));
+#endif
 
-	for (len -= 1; len >= 0; len--)
+	/*iterate through string*/
+	for (index = _strlen(b) - 1; index >= 0; index--)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		num = _atoi(b[index]); /*convert char to number*/
+
+#ifdef DEBUG /*print debug statements*/
+		printf("Number is %u, index is %i and base is %u.\n\n", num, index, base2);
+#endif
+
+		/*if number is not 0 or 1 return 0*/
+		if (num != 0 && num != 1)
 			return (0);
 
-		num += (b[len] - '0') * mult;
-		mult *= 2;
+		result += num * base2; /*enable debug to see it in action*/
+		base2 *= 2;
+
+#ifdef DEBUG /*print debug statements*/
+		printf("Result is %u.\n", result);
+#endif
 	}
 
-	return (num);
+	return (result);
 }
