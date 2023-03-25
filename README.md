@@ -28,6 +28,7 @@ working in the C language. The specific list of projects contained follows:
 * [0x14. C - Bit manipulation](./0x14-bit_manipulation)
 * [0x15. C - File I/O](./0x15-file_io)
 * [0x17. C - Doubly linked lists](0x17-doubly_linked_lists)
+* [0x18. C - Dynamic Libraries](0x18-dynamic_libraries)
 
 
 ## Author :Festus Maithya:
