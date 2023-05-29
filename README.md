@@ -29,8 +29,8 @@ working in the C language. The specific list of projects contained follows:
 * [0x15. C - File I/O](./0x15-file_io)
 * [0x17. C - Doubly linked lists](0x17-doubly_linked_lists)
 * [0x18. C - Dynamic Libraries](0x18-dynamic_libraries)
-* [0x1A-hash_tables](
-0x1A-hash_tables)
+* [0x1A-hash_tables](0x1A-hash_tables)
+* [0x1C-makefiles](0x1C-makefiles)
 
 ## Author :Festus Maithya:
 
