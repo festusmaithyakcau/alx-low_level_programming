@@ -1,10 +1,10 @@
 # Low-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming
 
 This repository contains programs written for the low-level programming and
-algorithm track at Holberton School. In these projects, which  occurred
-throughout the duration of the Year 1 curriculum, I learned about data
+algorithm track at ALX School. In these projects, which  occurred
+throughout the duration of the one year intense engineering curriculum, I learned about data
 structures, algorithms, and other low-level programming concepts while
-working in the C language. The specific list of projects contained follows:
+working with the C language. The specific list of projects contained is as follows:
 
 * [0x00. C - Hello, World](./0x00-hello_world)
 * [0x01. C - Variables, if, else, while](./0x01-variables_if_else_while)
@@ -39,7 +39,7 @@ working in the C language. The specific list of projects contained follows:
 
 ## Acknowledgements :pray:
 
-All work contained in this project was completed as part of the curriculum for
+All the work contained in this project repo was completed as part of the curriculum for
 ALX School. ALX School is a campus-based full-stack software
 engineering program that prepares students for careers in the tech industry
 using project-based peer learning. For more information, visit
